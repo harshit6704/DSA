@@ -5,7 +5,6 @@ int main(){
     int m=n;
     if(n==0){
         cout<<1;
-        
     }
     else{
     int mask=0;
