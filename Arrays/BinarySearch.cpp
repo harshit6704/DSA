@@ -3,7 +3,7 @@ using namespace std;
 int binarySearch(vector<int>&arr,int n,int k){
 int start=0;
 int end=n-1;
-int mid=start+(end-start/2);
+int mid=start+(end-start)/2;
 for(;start<=end;){
     if(arr[mid]==k){
         return mid;
@@ -14,7 +14,7 @@ for(;start<=end;){
     else{
         end=mid-1;
     }
-    mid=start+(end-start/2);
+    mid=start+(end-start)/2;
 }
 return -1;
 }
